@@ -1,0 +1,453 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 30px 195px 0 195px;
+}
+.navbar__logo {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.navbar__link {
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 21px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.navbar__menu {
+  padding-right: 370px;
+}
+.navbar__identification {
+  padding-right: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__identification__button {
+  background: #ff6551;
+  border-radius: 5px;
+  border-color: #ff6551;
+  color: #ffffff;
+  display: flex;
+  padding: 15px 25px;
+  gap: 15px;
+  cursor: pointer;
+}
+.navbar__identification__link {
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 21px;
+}
+
+.header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-2-cover.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 243px 0;
+}
+.header__section__content {
+  color: white;
+}
+.header__section__content h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  width: 542px;
+  padding-bottom: 40px;
+  height: 160px;
+  letter-spacing: 0.2px;
+}
+.header__section__content h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.header__section__content h4 {
+  font-size: 20px;
+  font-weight: 400;
+  width: 513px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.header__section__content button {
+  padding: 15px 40px;
+  border-radius: 5px;
+  border-color: #FF6551;
+  background: #FF6551;
+  color: #FFFFFF;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__section__content div {
+  display: flex;
+  justify-content: center;
+}
+
+.practice {
+  padding: 160px 198px;
+}
+.practice__desc {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.practice__desc h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff6551;
+  padding-bottom: 10px;
+}
+.practice__desc h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+  padding-bottom: 10px;
+}
+.practice__desc p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+.practice__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 7px;
+}
+.practice__block__card {
+  padding: 35px 40px;
+  gap: 20px;
+  width: 338px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.practice__block__card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ddeefe;
+  border-radius: 10px;
+  width: 70px;
+  height: 76px;
+}
+.practice__block__card .icon i {
+  color: #e74040;
+}
+.practice__block__card .icon #icon2 {
+  color: #2DC071;
+}
+.practice__block__card .icon #icon3 {
+  color: #FFC652;
+}
+.practice__block__card .line {
+  width: 50px;
+  height: 2px;
+  background: #e74040;
+}
+.practice__block__card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252b42;
+  padding: 20px 0;
+}
+.practice__block__card p {
+  width: 222px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.client {
+  padding: 160px calc((100vw - 1045px) / 2);
+}
+.client__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.client__container__img {
+  width: 100%;
+  height: 100%;
+}
+.client__container__desc {
+  padding-top: 101px;
+  padding-left: 163px;
+}
+.client__container__desc .line {
+  width: 94px;
+  height: 7px;
+  background: #e74040;
+}
+.client__container__desc h2 {
+  width: 259px;
+  height: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 35px;
+  color: #252b42;
+}
+.client__container__desc p {
+  width: 351px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+}
+.client__container__desc a {
+  width: 82px;
+  height: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff6551;
+}
+
+.courses {
+  padding: 160px calc((100vw - 1045px) / 2);
+  background: #26335d;
+}
+.courses__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.courses__container iframe {
+  height: 363px;
+  width: 508px;
+  padding-left: 152px;
+  border-radius: 10px;
+}
+.courses__container__desc {
+  padding-top: 58px;
+}
+.courses__container__desc .line {
+  width: 94px;
+  height: 7px;
+  background: #e74040;
+}
+.courses__container__desc h2 {
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 35px;
+  color: #ffffff;
+}
+.courses__container__desc p {
+  width: 351px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  padding: 35px 0;
+  line-height: 20px;
+  color: #ffffff;
+}
+.courses__container__desc a {
+  width: 82px;
+  height: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff6551;
+}
+
+.package {
+  padding: 160px 198px;
+}
+.package__desc {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.package__desc h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff6551;
+  padding-bottom: 10px;
+}
+.package__desc h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #252b42;
+  padding-bottom: 10px;
+}
+.package__desc p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+.package__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 7px;
+}
+.package__block__card .product1 {
+  background-image: url("../img/product1.jpg");
+}/*# sourceMappingURL=style.css.map */

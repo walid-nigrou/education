@@ -1,0 +1,44 @@
+.package{
+    padding: 160px 198px;
+    &__desc {
+        width: 100%;
+        margin-bottom: 80px;
+        h6 {
+          font-weight: 700;
+          font-size: 14px;
+          color: #ff6551;
+          padding-bottom: 10px;
+        }
+    
+        h2 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 50px;
+          color: #252b42;
+          padding-bottom: 10px;
+        }
+    
+        & p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #737373;
+        }
+      }
+
+      &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 7px;
+
+        &__card {
+
+          .product1{
+          background-image: url("../img/product1.jpg");
+        }
+
+        }
+      
+      }
+
+}

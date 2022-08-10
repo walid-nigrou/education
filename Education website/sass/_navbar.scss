@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 30px 195px 0 195px;
+  &__logo {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 21px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__menu {
+    padding-right: 370px;
+  }
+
+  &__identification {
+    padding-right: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__button {
+      background: #ff6551;
+      border-radius: 5px;
+      border-color: #ff6551;
+      color: #ffffff;
+      display: flex;
+      padding: 15px 25px;
+      gap: 15px;
+      cursor: pointer;
+    }
+
+    &__link {
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0 21px;
+      
+    }
+  }
+}
+
+.header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero-2-cover.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
